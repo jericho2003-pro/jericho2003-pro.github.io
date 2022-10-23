@@ -9848,15 +9848,29 @@ h6,
   margin-right: 10px;
 }
 /* Ineedit ko */
+.large-sc {
+  display: flex;
+}
+.small-sc {
+  display: none;
+}
+@media (max-width: 480px) {
+  .large-sc {
+    display: none;
+  }
+  .small-sc {
+    display: flex;
+  }
+}
 @media (max-width: 480px) {
   .logo-text{
     font-size: 80%;
   }
   .data-sub {
-    font-size: 70%;
+    font-size: 85%;
   }
   .data-sub1 {
-    font-size: 80%;
+    font-size: 95%;
   }
 
   .btn-icon {
