@@ -406,6 +406,7 @@ h4, .h4 {
   h4, .h4 {
     font-size: calc(1.275rem + 0.3vw) ;
   }
+  
 }
 
 h5, .h5 {
@@ -476,10 +477,18 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+
 small,
 .small {
   font-size: 80%;
   font-weight: 400;
+}
+@media (max-width: 480px) {
+  small,
+  .small {
+    font-size: 70%;
+    font-weight: 400;
+  }
 }
 
 mark,
@@ -4183,6 +4192,7 @@ input[type="button"].btn-block {
   background-size: 100% 100%;
 }
 
+
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
@@ -6935,6 +6945,8 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 576px) {
+  
+  
   .flex-sm-row {
     flex-direction: row !important;
   }
@@ -7145,6 +7157,7 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 992px) {
+  
   .flex-lg-row {
     flex-direction: row !important;
   }
@@ -7250,6 +7263,7 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 1200px) {
+  
   .flex-xl-row {
     flex-direction: row !important;
   }
@@ -9827,6 +9841,33 @@ h6,
   background: url(../img/overlay-bottom.png) bottom center no-repeat;
   background-size: contain;
 }
+
+
+.logo {
+  width: 25px;
+  margin-right: 10px;
+}
+/* Ineedit ko */
+@media (max-width: 480px) {
+  .logo-text{
+    font-size: 80%;
+  }
+  .data-sub {
+    font-size: 70%;
+  }
+  .data-sub1 {
+    font-size: 80%;
+  }
+
+  .btn-icon {
+    width: 57px;
+    height: 57px;
+  }
+  .p-info {
+    font-size: 90%;
+  }
+}
+
 
 .bg-image {
   background: linear-gradient(rgba(40, 120, 235, 0.05), rgba(40, 120, 235, 0.05)), url(../img/bg-image.jpg);
